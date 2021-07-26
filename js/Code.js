@@ -14,12 +14,12 @@ function clues() {
     textSize(15)
     text("T U F I N O C N", 700, 150)
     fill("red")
-    text("Hint: Performs a particular task !!", 700, 180)
+    text("Hint: Performs a particular task !!", 700, 170)
 
     fill("purple")
     textSize(15)
-    text("A B A D S E A T", 100, 300)
+    text("A B A D S E A T", 100, 250)
     fill("pink")
-    text("Hint: It stores all information !!", 100, 330)
+    text("Hint: It stores all information !!", 100, 270)
 
 }

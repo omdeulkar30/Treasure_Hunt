@@ -10,7 +10,7 @@ class Security {
         this.button1.position(100, 120);
         this.button1.style('background', 'red');
 
-        this.access2 = createInput("Code1")
+        this.access2 = createInput("Code2")
         this.access2.position(700, 190);
         this.access2.style('background', 'purple');
 
@@ -18,7 +18,13 @@ class Security {
         this.button2.position(700, 220);
         this.button2.style('background', 'pink');
         //add code for creating and positioning the third input box and button
+        this.access3 = createInput('Code3')
+        this.access3.position(100, 290)
+        this.access3.style('background', 'red');
 
+        this.button3 = createButton('Check');
+        this.button3.position(100, 320);
+        this.button3.style('background', 'hotpink');
     }
 
     display() {
@@ -28,6 +34,7 @@ class Security {
                 this.button1.hide();
                 this.access1.hide();
                 score++;
+                console.log("vrnjw")
             }
         });
 
@@ -39,12 +46,12 @@ class Security {
             }
         });
         //add code for what happens when the third button is pressed
-        /*this.button2.mousePressed(() => {
-            if (system.authenticate(accessCode2, this.access2.value())) {
-                this.button2.hide();
-                this.access2.hide();
+        this.button3.mousePressed(() => {
+            if (system.authenticate(accessCode3, this.access3.value())) {
+                this.button3.hide();
+                this.access3.hide();
                 score++;
-            }*/
-
+            }
+        })
     }
 }
